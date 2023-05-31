@@ -1,13 +1,23 @@
 import os
 from os import system
 
+oveja = {
+    "color":"Color",
+    "precio":1000,
+    "cantidad":0
+}
+
 ovejas_color = ["negro","blanco","morado","verde","amarillo","rojo"]
 ovejas_precio = [800,1200,3000,2670,1500,3410]
-ovejas_contador = [0] * len(ovejas_color)
+
+lista_oveja = []
+for i in range(len(ovejas_color)):
+    oveja["color"] = ovejas_color[i]
+    oveja["precio"] = ovejas_precio[i]
+    oveja["cantidad"] = 0
+    lista_oveja.append(oveja)
 
 sel = ""
-
-#insertar ovejas
 
 #contar ovejas
 while(True):
